@@ -1,6 +1,6 @@
 public class Main {
-  public static void main(String[] args) {
-		Basic1_10 exercise = new Basic1_10();
+	public static void main(String[] args) {
+		Basic1_20 exercise = new Basic1_20();
 		exercise.main();
-  }
+	}
 }
