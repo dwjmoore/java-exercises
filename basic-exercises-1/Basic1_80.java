@@ -1,18 +1,18 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class Basic1_79 {
+public class Basic1_80 {
 	public void main() {
 		Scanner input = new Scanner(System.in);
 
 		System.out.println(
-				"Write a Java program to rotate an array (of at least length 3) of integers in left direction.");
+				"Write a Java program to get the larger value between first and last element of an array (of at least length 3) of integers..");
 
 		System.out.print("Array Length: ");
 		int len = input.nextInt();
 
-		while (len < 3) {
-			System.out.println("Array length must be at least 2.");
+		while (len < 3 ) {
+			System.out.println("Array length must be at least 3.");
 			System.out.print("Array Length: ");
 			len = input.nextInt();
 		}
@@ -22,8 +22,7 @@ public class Basic1_79 {
 		System.out.print("Array = ");
 		array = createArray(len);
 
-		int[] rotatedArray = rotateArray(array);
-
+		int [] rotatedArray = rotateArray(array);
 	}
 
 	public int[] createArray(int len) {
@@ -51,15 +50,6 @@ public class Basic1_79 {
 				rotatedArray[i - 1] = array[i];
 			}
 		}
-		System.out.print("rotatedArray = [");
-		for (int i = 0; i < rotatedArray.length; i++) {
-			if (i == rotatedArray.length - 1) {
-				System.out.print(rotatedArray[i] + "]");
-			} else {
-				System.out.print(rotatedArray[i] + ", ");
-			}
-		}
-		System.out.println();
 		return rotatedArray;
 	}
 }
