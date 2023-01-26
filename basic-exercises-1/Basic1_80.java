@@ -22,7 +22,8 @@ public class Basic1_80 {
 		System.out.print("Array = ");
 		array = createArray(len);
 
-		int [] rotatedArray = rotateArray(array);
+		int maxValue = findMaxValue(array);
+		System.out.println("maxValue = " + maxValue);
 	}
 
 	public int[] createArray(int len) {
@@ -41,15 +42,11 @@ public class Basic1_80 {
 		return array;
 	}
 
-	public int[] rotateArray(int[] array) {
-		int[] rotatedArray = new int[array.length];
-		for (int i = 0; i < array.length; i++) {
-			if (i == 0) {
-				rotatedArray[array.length - 1] = array[0];
-			} else {
-				rotatedArray[i - 1] = array[i];
-			}
+	public int findMaxValue(int[] array) {
+		int maxValue = array[0];
+		if (array[array.length - 1] > maxValue) {
+			maxValue = array[array.length - 1];
 		}
-		return rotatedArray;
+		return maxValue;
 	}
 }
