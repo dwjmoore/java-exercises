@@ -6,7 +6,7 @@ public class Basic1_80 {
 		Scanner input = new Scanner(System.in);
 
 		System.out.println(
-				"Write a Java program to get the larger value between first and last element of an array (of at least length 3) of integers..");
+				"Write a Java program to get the larger value between first and last element of an array (of at least length 3) of integers.");
 
 		System.out.print("Array Length: ");
 		int len = input.nextInt();
