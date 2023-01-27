@@ -11,7 +11,7 @@ public class Basic1_81 {
 		System.out.print("Array Length: ");
 		int len = input.nextInt();
 
-		while (len < 2 ) {
+		while (len < 2) {
 			System.out.println("Array length must be at least 2.");
 			System.out.print("Array Length: ");
 			len = input.nextInt();
@@ -19,7 +19,6 @@ public class Basic1_81 {
 
 		int[] array = new int[len];
 
-		
 		array = createArray(len);
 		System.out.print("Array = ");
 		printArray(array);
@@ -50,9 +49,9 @@ public class Basic1_81 {
 
 	public void printArray(int[] array) {
 		System.out.print("[");
-		for (int i = 0; i < array.length - 2; i++) {
+		for (int i = 0; i < array.length - 1; i++) {
 			System.out.print(array[i] + ", ");
 		}
-		System.out.println(array[array.length -1] + "]");
+		System.out.println(array[array.length - 1] + "]");
 	}
 }
