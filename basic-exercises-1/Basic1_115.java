@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Basic1_114 {
+public class Basic1_115 {
 	public void main() {
 		System.out.println(
 				"Write a Java program to check if a positive number is a palindrome or not.");
