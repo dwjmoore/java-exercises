@@ -49,7 +49,7 @@ public class Basic1_122 {
 	}
 
 	public void subarraySum(int[] array) {
-		int maxSum = 0, i = 0;
+		int maxSum = 0, i = 0, startIndex = 0, endIndex = 0;
 
 		while (i < array.length) {
 			int tempSum = 0;
@@ -60,11 +60,15 @@ public class Basic1_122 {
 				}
 				if (tempSum > maxSum) {
 					maxSum = tempSum;
+					startIndex = i;
+					endIndex = j;
 					break;
 				}
 			}
 		}
 
-		System.out.println(maxSum);
+		System.out.println("Sum: " + maxSum);
+		System.out.println("Start Index: " + startIndex);
+		System.out.println("End Index: " + endIndex);
 	}
 }
