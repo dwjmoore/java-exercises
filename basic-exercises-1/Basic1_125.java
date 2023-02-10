@@ -66,4 +66,12 @@ class BinaryTree {
 			preOrderTraversal(focusNode.right);
 		}
 	}
+
+	public void inOrderTraversal(Node focusNode) {
+		if (focusNode != null) {
+			inOrderTraversal(focusNode.left);
+			System.out.print(focusNode.data + " ");
+			inOrderTraversal(focusNode.right);
+		}
+	}
 }
