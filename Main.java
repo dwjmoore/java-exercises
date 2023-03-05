@@ -1,6 +1,8 @@
 public class Main {
 	public static void main(String[] args) {
-		Basic1_135 exercise = new Basic1_135();
-		exercise.main();
+		Directions direction = Directions.valueOf("NORTH");
+		Compass compass = new Compass();
+		compass.setDirection(direction);
+		compass.printTravelingDirection();
 	}
 }
